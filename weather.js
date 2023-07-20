@@ -1,3 +1,6 @@
+let b = document.querySelector('button#print');
+b.addEventListener('click', print);
+
 let data = {
   "coord": {
     "lon": 116.3972,
@@ -47,3 +50,18 @@ let data = {
 
 ////////// 課題3-2 ここからプログラムを書こう
 
+function print() {
+	let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/2643743.json';
+
+	axios.get(url)
+		.then(showResult)
+		.catch(showError)
+		.then(finish);
+}
+
+
+
+// 通信の最後にいつも実行する処理
+function finish() {
+	console.log('Ajax 通信が終わりました');
+}
