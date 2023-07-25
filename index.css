@@ -1,3 +1,7 @@
 body {
-    background: linear-gradient(#7773ee, #e5e992);
+    background: linear-gradient(135deg,#7773ee, #e5e992);
+}
+
+h1 {
+    font-family: Script;
 }
