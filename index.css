@@ -1,7 +1,28 @@
 body {
-    background: linear-gradient(135deg,#7773ee, #e5e992);
+    background: linear-gradient(135deg,#7773ee, #e5e992);;
+    font-family: "Comic Sans MS";
 }
 
 h1 {
-    font-family: Script;
+    color:rgb(223, 219, 185);
+    text-shadow: rgb(181, 229, 110) 1px 0 10px
+}
+
+h2{
+    color:rgb(0, 28, 207);
+    text-shadow: rgb(94, 255, 239) 1px 0 10px
+}
+
+
+
+div.zentai {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 5px;
+	width: 1024px;
+	grid-gap: 10px;
+}
+
+div.zentai > div {
+	padding: 5px;
 }
