@@ -41,7 +41,7 @@ function showResult(resp) {
 	let a7 = document.querySelector('span#a7');
     a7.textContent = data.main.humidity + '%';
 	let a8 = document.querySelector('span#a8');
-    a8.textContent = data.wind.speed + '°m/s';
+    a8.textContent = data.wind.speed + 'm/s';
 	let a9 = document.querySelector('span#a9');
     a9.textContent = data.wind.deg;
 }
